@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Float and Allign</title>
+
+  <style>
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4em;
+  }
+  .clr{
+    clear: both;
+  }
+  .container{
+      max-width: 960px;
+      margin: 30px auto;
+    }
+  .box{
+    background: rgb(223, 223, 216);
+    border: 3px black solid;
+    padding: 20px;
+    margin-bottom: 10px;
+  }
+  *{
+    box-sizing: border-box;
+
+  }
+ 
+    /* Text Allign */
+    .box p{
+      text-align: left;
+      text-align: right;
+      text-align: center;
+      text-align: justify;
+    }
+    #box-2{
+      float: left;
+      width: 55%;
+    }
+    #box-3{
+      float: right;
+      width: 40%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi placeat officiis sed quibusdam optio quam itaque laudantium laboriosam aperiam sequi.</p>
+    </div>
+    <div id="box-2" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi placeat officiis sed quibusdam optio quam itaque laudantium laboriosam aperiam sequi.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi placeat officiis sed quibusdam optio quam</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h2>Heading</h2>
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi placeat officiis sed quibusdam optio quam</p>
+    </div>
+  </div>
+</body>
+</html>
