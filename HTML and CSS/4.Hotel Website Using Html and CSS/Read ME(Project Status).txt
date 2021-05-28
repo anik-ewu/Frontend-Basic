@@ -1,2 +1,3 @@
-Project In Progress.
-50%Done.
+Project Status	: Complete
+Description	: This is a simple hotel webpage. I have used HTML and CSS to 
+		  design this page. Hope you will like it.
