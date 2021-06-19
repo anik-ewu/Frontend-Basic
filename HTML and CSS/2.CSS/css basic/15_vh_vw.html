@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vh and Vw Units</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    html {
+      font-size: 10px;
+    }
+
+    header {
+      background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+      height: 100vh;
+      color: black;
+      text-align: center;
+      padding: 1rem;
+      padding-top: 15rem;
+      font-size: 2rem;
+    }
+
+    header .color-black {
+      color: white;
+    }
+
+    header p {
+      margin: 10px 0;
+    }
+
+    header .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: #333;
+      color: aliceblue;
+      padding: 0.7rem 2rem;
+    }
+
+    section {
+      font-size: 2rem;
+      padding: 2rem;
+      padding-top: 5rem;
+    }
+
+    @media(max-width: 450px) {
+      header {
+        padding-top: 5rem;
+      }
+
+      header h1 {
+        color: red;
+      }1
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <h1>Welcome To Our Page</h1>
+    <p>ipsum dolor sit amet consectetur adipisicing elit. Ali<span class='color-black'> quam tempora nihil deserunt
+        rerum cumque rem.</span></p>
+    <a href="#" class="btn">Find More</a>
+  </header>
+  <section>
+    <h1>About</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae commodi tenetur asperiores tempora recusandae
+      cumque ad ducimus quos, hic illo voluptates autem sunt facilis labore! Autem corporis explicabo delectus enim
+      cupiditate aut labore commodi, reprehenderit, eaque expedita consequuntur rerum optio laborum voluptatibus
+      repellat dignissimos, aperiam exercitationem? Similique necessitatibus fugit quas?</p>
+  </section>
+</body>
+
+</html>

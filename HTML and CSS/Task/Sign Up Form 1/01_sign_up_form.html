@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signup</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-container .showcase-image {
+      max-width: 650px;
+    }
+
+    .flex-container .signup-headign {
+      margin: 30px 30px;
+    }
+
+    .flex-container .flex-item2 .form-group {
+      margin: 10px 30px;
+      line-height: 2;
+    }
+
+    .flex-container .flex-item2 .form-label {
+      display: flex;
+    }
+
+    .form-group input,
+    .signup,
+    .signin {
+      outline: none;
+      border: none;
+    }
+
+    .signup {
+      background-color: #333;
+      padding: 8px 50px;
+      border-radius: 20px;
+      text-align: center;
+      color: #f4f4f4;
+      cursor: pointer;
+    }
+
+    .signup:hover {
+      opacity: 0.9;
+    }
+
+    .signin {
+      background: white;
+      margin-left: 20px;
+      padding: 0px 20px;
+      cursor: pointer;
+    }
+
+    .signin:hover {
+      font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="flex-container">
+    <div class="flex-item1">
+      <img class="showcase-image" src="/image-01.jpg" alt="Can not open the image">
+    </div>
+
+    <div class="flex-item2">
+      <h2 class="signup-headign">Sign UP</h2>
+
+      <div class="form-group">
+        <label class="form-label" for="name">Full Name</label>
+        <input type="text" name="name" id="name" placeholder="Name...">
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="email">Email</label>
+        <input type="text" name="email" id="email" placeholder="Email adress...">
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="name">Username</label>
+        <input type="text" name="name" id="name" placeholder="Username...">
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="********">
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="repeat-password">Repeat Password</label>
+        <input type="password" name="repeat-password" id="repeat-password" placeholder="********">
+        <hr>
+      </div>
+
+      <div class="form-group">
+        <input type="checkbox" name="agree" id="agree">I agree to the <strong>Terms of User</strong>
+      </div>
+
+      <div class="form-group">
+        <button class="signup">Sign Up</button>
+        <button class="signin">Sign in &#8594;</button>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

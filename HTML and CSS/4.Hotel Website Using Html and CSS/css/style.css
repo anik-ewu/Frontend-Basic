@@ -8,7 +8,7 @@
 /* Main Styling */
 body{
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.7em;
+  line-height: 1.7em; //study pixel em and other css units
 }
 a{
   color: #333;
@@ -24,9 +24,9 @@ p{
 }
 /* Utility Classes */
 .container{
-  margin: auto;
+  margin: auto; // randomly comes in center based on parent;
   max-width: 1400px;
-  overflow: auto;
+  overflow: auto; //overflow
   padding: 0 20px;
 }
 .text-primary{
@@ -89,7 +89,7 @@ p{
   color: #fff;
 }
 
-#navbar h1{
+#navbar .logo{
   float: left;
   padding-top: 20px;
 }
@@ -106,6 +106,7 @@ p{
   padding: 20px;
   text-align: center;
 }
+
 
 #navbar ul li a:hover,
 #navbar ul li a.current {
@@ -138,7 +139,7 @@ p{
 
 /* Home Info */
 #home-info{
-  height: 400px;
+  height: 450px;
 }
 #home-info .info-img{
   float: left;
@@ -200,7 +201,7 @@ p{
 }
 
 #testimonials{
-  height: 600px;
+  height: 100%;
   padding-top: 40px;
   background: url('../img/test-bg.jpg') no-repeat center center/cover;
 }

@@ -1,0 +1,127 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+/* Navbar */
+#navbar ul{
+  /* list-style: none; */
+}
+
+#navbar .flex-container{
+  background: rgb(17, 184, 250);
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding-left: 80px; 
+  padding-right: 80px;
+}
+
+/* avoid targetting direct tags */
+
+#navbar .flex-container a{
+  font-size: 25px;
+  color: white;
+  padding: 35px;
+
+}
+
+#navbar .flex-container .home{
+  padding-left: 900px; 
+}
+
+#navbar .flex-container .current a{
+  background: rgb(71, 191, 247); 
+}
+
+#navbar .flex-container .logo a{
+  font-size: 60px;  
+}
+
+
+/* Home Page */
+
+.showcase .intro{
+  background: url(./img/lading-image.jpg) no-repeat center center/cover;
+  height: 650px;
+  text-align: center;
+  padding-top: 220px;
+  color: white;
+  font-size: 2.7em;
+}
+
+.large-heading{
+  font-size: 2em;
+}
+.showcase p{
+  margin-bottom: 50px;
+}
+.showcase .intro .dark-button{
+  border: rgb(17, 184, 250) 2px solid;
+  background: rgb(17, 184, 250);
+  color: white;
+  padding: 30px 70px; 
+  border-radius: 5px;
+  font-size: 30px;
+}
+.showcase .intro .light-button{
+  border:white 2px solid;
+  background: white;
+  color:  rgb(17, 184, 250);
+  padding: 30px 70px; 
+  border-radius: 5px;
+  font-size: 30px;
+}
+
+.feature{
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 50px;
+}
+
+
+.flex-icons{
+  display: flex;
+  justify-content: center; 
+}
+
+.flex-icons .icon{
+  color: white;
+  background:rgb(17, 184, 250);
+  display: inline;
+  padding: 40px;
+  margin: 100px 150px;
+  border-radius: 50%;
+  
+}
+
+/* do not overwrite library class */
+.flex-icons .icon .fas{
+  font-size: 25px;
+}
+
+.fa-chevron-left{
+  margin-right: 700px;
+}
+
+.fa-chevron-right{
+  margin-left: 700px;
+}
+
+.fa-chevron-left, .fa-chevron-right{ 
+  cursor:pointer;
+  border: #333 1px solid;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 30px;
+  color: #333;
+}

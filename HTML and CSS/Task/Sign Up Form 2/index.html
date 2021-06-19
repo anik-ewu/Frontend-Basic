@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+
+    }
+    body{
+      background:chartreuse;
+    }
+    .container{
+      min-height: 80vh;
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    .event-registration{
+      width: 600px;
+      background: white;
+    }
+
+    .event-registration .title{
+      text-align: center;
+      background:black;
+      color: white;
+      height: 40px;
+      padding-top: 10px;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="event-registration">
+      
+      <div class="title">
+        EVENT REGISTRATION FORM
+      </div>
+
+      <form>
+        <div class="form-wrap">
+          <div class="input-group">
+            <div class="input-wrap">
+              <h5>Name</h5>
+              <input type="text" name="firstname" id="firstname">
+              <label for="firstname">First Name</label>
+            </div>
+            
+            <div class="input-wrap">
+              <input type="text" name="lasttname" id="lastname">
+              <label for="lastname">Last Name</label>
+            </div>
+            
+            <div class="input-wrap">
+              <h5>Company</h5>
+              <input type="text" name="company" id="company">
+            </div>
+
+            <div class="input-wrap">
+              <h5>Email</h5>
+              <input type="email" name="email" id="email">
+            </div>
+
+            <div class="input-wrap">
+              <h5 class="phone">Phone</h5>
+              <input type="text" name="area_code" class="code">
+              <label for="area_code" class="area-code">Area Code</label>
+              <input type="text" name="phone" class="number">
+              <label for="phone" class="phone-number">Phone Number</label>
+            </div>
+
+            <div class="input-wrap">
+              <select name="option" id="" placeholder="Subject">
+                <option disabled="disabled" selected="selected">Choose Option</option>
+                <option value="option">Subject  1</option>
+                <option value="option">SSubject 2</option>
+              </select>
+            </div>
+
+            <div class="input-wrap">
+              <p>Are you an exixting customer ?</p>
+              <input type="radio" name="member" value="yes" checked>Yes
+              <input type="radio" name="member" value="no">No
+            </div>
+            
+            <div class="input-wrap">
+              <button type="submit" class="btn">Register</button>
+            </div>
+
+          </div>
+        </div>
+      </form>
+    </div>  
+  </div>
+
+
+  <!-- <div class="heading"></div>
+   <div class="form"> 
+    form
+    <div class="main">
+      <h5 class="name">Name</h5>
+      <input type="text" class="first-name" name="first-name"><br>
+      <label for="first-name">First Name</label>
+      <input type="text" class="last-name" name="last-name">
+      <label for="last-name">Last Name</label>
+
+      <h5 class="company">Company</h5>
+      <input type="text" class="company" name="company">
+
+      <h5 class="email">Email</h5>
+      <input type="email" name="email" class="email">
+
+      <h5 class="phone">Phone</h5>
+      <input type="text" name="area_code" class="code">
+      <label for="area_code" class="area-code">Area Code</label>
+      <input type="text" name="phone" class="number">
+      <label for="phone" class="phone-number">Phone Number</label>
+      
+      <div>
+        <p>Are you an exixting customer ?</p>
+        <input type="radio" name="member" value="yes" checked>Yes
+        <input type="radio" name="member" value="no">No
+      </div>
+
+      <button type="submit" class="btn">Register</button> -->
+      
+    </div>
+  </div>
+  
+</body>
+</html>
