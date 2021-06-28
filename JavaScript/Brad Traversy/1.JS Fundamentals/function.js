@@ -4,7 +4,6 @@ function sum(a = 2, b = 3) {
 }
 let val = sum(1, 2);
 console.log(val);
-
 // Function expresions
 const square = function (x) {
   return x * x;
@@ -17,7 +16,6 @@ console.log(square(8));
 })('Anik ');
 
 // property methods
-
 const todo = {
   add: function () {
     console.log('Add todo..');

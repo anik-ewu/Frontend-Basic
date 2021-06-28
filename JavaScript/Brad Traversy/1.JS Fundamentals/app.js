@@ -47,5 +47,8 @@ let val;
 // console.log(val);
 
 // navigator object
+alert(123);
 val = window.navigator;
+
+val =5;
 console.log(val);
