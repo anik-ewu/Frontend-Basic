@@ -43,7 +43,7 @@ body{
   border: none;
   font-size: 1.1em;
   margin-top: 1rem;
-  transition: all 0.3 ease-in;
+  transition: all ease-in;
 }
 
 .btn:hover, .btn-dark{
