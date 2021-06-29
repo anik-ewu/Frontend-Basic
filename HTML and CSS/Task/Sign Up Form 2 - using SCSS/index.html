@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Registration</title>
+  <style>
+    :root{
+      --bg-color: hsl(0, 14%, 93%);
+      --txt-color: hsl(0, 5%, 70%);
+      --btn-color: rgb(233, 47, 47);
+    }
+
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: rgb(36, 86, 104);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    #full-form{
+      background: white;
+      height: 75vh;
+      border-radius: 0 0 5px 5px;
+    }
+    #full-form, .form-title{
+      margin: auto;
+      width: 700px;
+    }
+    input, .opt{
+      padding: 10px;
+      border: none;
+      background: var(--bg-color);
+      border-radius: 5px;
+    }
+    label{
+      color: var(--txt-color);
+      font-size: 0.7rem;
+    }
+
+    /* Title Part */
+    .form-title{
+      background: black;
+      color: white;
+      text-align: center;
+      padding: 13px 0;
+      border-radius: 5px 5px 0 0;
+      margin-top: 35px;
+    }
+
+    /* Form Section */
+    .tags{
+      max-width: 100px;
+    }
+    .primary-container,.company, .email, .subject{
+      display: flex;
+    }
+
+    .company input,
+    .email input, .opt{
+      width: 435px;
+    }
+    .item, .radio, .btn{
+      padding: 20px 40px;
+    }
+    .radio {
+      display: block;
+    }
+
+    #area-code{
+      width: 100px;
+    }
+    #phone{
+      width: 255px;
+    }
+
+    .tags {
+      display: flex;
+      align-items: center;
+    }
+    .primary-container .tags {
+      padding-bottom: 30px;
+    }
+
+    /* Submit Button */
+    .btn{
+      background: var(--btn-color);
+      text-align: center;
+      margin-left: 40px;
+      color: white;
+      padding: 10px 30px;
+      border-radius: 5px;
+      border: none;
+    }
+    .btn:hover{
+      opacity: 0.9;
+    }
+
+
+
+  </style>
+</head>
+<body>
+  
+  <header class="form-title">
+    <h3>EVENT REGISTRATION FORM</h3>
+  </header>
+
+  <form id="full-form">
+
+      <div class="primary-container">
+        <div class="item tags">
+          <h5>Name</h5>
+        </div>
+        <div class="item">
+          <input type="text" name="firstname" id="firstname"><br>
+          <label for="firstname">First Name</label>
+        </div>
+        <div class="item">
+          <input type="text" name="lastname" id="lastname"><br>
+          <label for="firstname">Last  Name</label>
+        </div>
+      </div>
+
+      <div class="company">
+        <div class="item tags">
+          <h5>Company</h5>
+        </div>
+        <div class="item">
+          <input type="text" name="company" id="company">
+        </div>
+      </div>
+      <div class="email">
+        <div class="item tags">
+          <h5>Email</h5>
+        </div>
+        <div class="item">
+          <input type="email" name="email" id="email">
+        </div>
+      </div>
+
+      <div class="primary-container">
+        <div class="item tags">
+          <h5>Phone</h5>
+        </div>
+        <div class="item">
+          <input type="code" name="area-code" id="area-code"><br>
+          <label for="area-code">Area Code</label>
+        </div>
+        <div class="item">
+          <input type="number" name="phone" id="phone"><br>
+          <label for="phone">Phone Number</label>
+        </div>
+      </div>
+
+      <div class="subject">
+        <div class="item tags">
+          <h5>Subject</h5>
+        </div>
+        <div class="item">
+          <select name="subject" id="subject" class='opt'>
+          <option disabled="disabled" selected="selected" class='opt'>--Choose Option</option>
+          <option>Subject 1</option>
+          <option>Subject 2</option>
+          <option>Subject 3</option>
+        </select>  
+        </div>
+      </div>
+
+      <div class='radio'>
+        <h5>Are  you an existing customer ?
+          <br><br>
+        </h5>
+        <input type="radio" name="check" id="check">Yes
+        <input type="radio" name="check" id="check">No
+      </div>
+
+      <button class='btn'><h5>REGISTER</h5></button>
+
+  </form>
+  
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>Event Registration</title>
+</head>
+
+<body>
+
+  <header class="form-title">
+    <h3>EVENT REGISTRATION FORM</h3>
+  </header>
+
+  <form id="full-form">
+    <div class="row">
+      <div class="col">
+
+        <div class="flex-item name">
+          <div class="item tags">
+            <h5>Name</h5>
+          </div>
+          <div class="item first-name">
+            <input type="text" name="firstname" id="firstname" class="input-item"><br>
+            <label for="firstname" class="labels">First Name</label>
+          </div>
+          <div class="item">
+            <input type="text" name="lastname" id="lastname" class="input-item"><br>
+            <label for="firstname" class="labels">Last Name</label>
+          </div>
+        </div>
+
+
+        <div class="flex-item  company">
+          <div class="item tags">
+            <h5>Company</h5>
+          </div>
+          <div class="item">
+            <input type="text" name="company" id="company" class="input-item">
+          </div>
+        </div>
+
+        <div class="flex-item  email">
+          <div class="item tags">
+            <h5>Email</h5>
+          </div>
+          <div class="item">
+            <input type="email" name="email" id="email" class="input-item">
+          </div>
+        </div>
+
+        <div class="flex-item  phone">
+          <div class="item tags">
+            <h5>Phone</h5>
+          </div>
+          <div class="item area-codes">
+            <input type="number" name="area-code" id="area-code" class="input-item"><br>
+            <label for="area-code" class="labels">Area Code</label>
+          </div>
+          <div class="item">
+            <input type="number" name="phone" id="phone" class="input-item"><br>
+            <label for="phone" class="labels">Phone Number</label>
+          </div>
+        </div>
+
+        <div class="flex-item  subject">
+          <div class="item tags">
+            <h5>Subject</h5>
+          </div>
+          <div class="item">
+            <select name="subject" id="subject" class='options'>
+              <option disabled="disabled" selected="selected" class='opt'> Choose Option</option>
+              <option>Subject 1</option>
+              <option>Subject 2</option>
+              <option>Subject 3</option>
+            </select>
+          </div>
+        </div>
+
+        <div class='radio'>
+          <h5>Are you an existing customer ?
+            <br><br>
+          </h5>
+          <input type="radio" name="check" id="check" class="radio-btn-1">Yes
+          <input type="radio" name="check" id="check" class="radio-btn-2">No
+        </div>
+
+        <!-- submit button -->
+        <button class='btn'>
+          <h5>REGISTER</h5>
+        </button>
+
+      </div>
+    </div>
+  </form>
+</body>
+
+</html>
