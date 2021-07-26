@@ -1,0 +1,12 @@
+body{
+  background:#ccc;
+}
+h1{
+  color: yblack;
+  text-align: center;
+}
+
+div{
+  width: 100vw;
+  height: 100vh;
+}

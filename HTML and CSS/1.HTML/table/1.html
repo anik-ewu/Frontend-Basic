@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic Table</title>
+
+  <style>
+    table, th, td{
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    th, td{
+      padding: 15px;
+    }
+    th{
+      text-align: right;
+      text-align: left;
+    }
+    #t1 th{
+      background: black;
+      color: white;
+    }
+    #t1 tr:nth-child(even){
+      background: #ccc;
+    }
+    #t1 tr:nth-child(){
+      background: crimson;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <table id="t1" style="width: 100%">
+    <caption>Smple Table</caption>
+    <tr>
+      <th >Name</th>
+      <th>Last Name</th>
+      <th>Age Name</th>
+    </tr>
+    <tr>
+      <td>Sabbir</td>
+      <td>Hasan</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Sabbir</td>
+      <td>Hasan</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>Sabbir</td>
+      <td>Hasan</td>
+      <td>26</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
