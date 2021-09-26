@@ -1,0 +1,138 @@
+$mycolor: #005DFF;
+
+$colors:(
+  primary: blue,
+  accent: #ccc,
+  primary-light: lighten(blue, 40%), 
+  primary-dark: darken(blue, 40%) 
+);
+
+$padding:15px;
+$borders:15px;
+
+body, html{
+  height: 100%;
+}
+
+@function color($color-name){
+  @return map-get($colors, $color-name);
+}
+
+$desktop: 840px;
+
+@mixin desktop {
+  @media (min-width: #{$desktop}){
+    @content;
+  }
+}
+
+
+body{
+  margin: 0;
+  
+  #bg{
+    clip-path: polygon(0 0, 100% 0, 100% 72%, 66% 100%, 0 100%);
+    background-color: color(primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+
+    @include desktop{
+      clip-path: polygon(0 0, 82% 0, 66% 100%, 0 99%);
+    }
+  }
+
+  header a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+}
+
+main{
+
+  @include desktop{
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: 
+    "primary card";
+  }
+
+  section.card{
+    background-color: white;
+    padding: 20px;
+    margin: 1em auto;
+    border-radius: $borders;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+    width: 80%;
+
+    @include desktop{
+      grid-area: card;
+      height: fit-content;
+      align-self: center;
+      margin: 1em;
+    }
+
+    ul{
+      list-style-type: none;
+      margin: 0;padding:0;
+      
+      li{
+        margin-bottom: 10px;
+
+        span{
+          position:absolute;
+          width: 25px;
+          height: 25px;
+          background-color: color(primary-light);
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+
+        strong{
+          display: inline-block;
+          margin-left: max(40px);
+          margin-top:10px; 
+        }
+      }
+    }
+  }
+
+  section.primary{
+    color: white;
+    padding: $padding;
+    text-align: center;
+
+    @include desktop{
+      grid-area: primary;
+      text-align: left;
+      margin: 4em  0 0 4em;
+    }
+
+    h1{
+      font-size: 3em;
+      margin-top: 10px;
+      text-transform: uppercase;
+    }
+
+    p{
+      font-size: 1.4em;
+    }
+
+    a{
+      color: color(primary-dark);
+      border-radius: $borders;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: color(accent);
+      display: block;
+      text-align: center;
+      margin: 50px  auto 0 auto;
+      padding: $padding;
+    }
+
+   }
+
+}
