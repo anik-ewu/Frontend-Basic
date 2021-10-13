@@ -14,6 +14,7 @@ export class AppComponent  {
   public showYAxis = true;
   public gradient = true;
   public showLegend   = true;
+  public legend: boolean = true;
   public showXAxisLabel = true;
   public xAxisLabel: "Months";
   public showYAxisLabel = true;
