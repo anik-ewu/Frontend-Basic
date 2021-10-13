@@ -20,9 +20,9 @@ export class AppComponent {
     this.courses.push({id: this.counter, name: 'courses'+this.counter})
     this.counter++;
   }
-  onRemove(course){
-    let index=this.courses.indexOf(course);
-    this.courses.splice(index, 1);
-  }
+  // onRemove(course){
+  //   let index=this.courses.indexOf(course);
+  //   this.courses.splice(index, 1);
+  // }
 
 }

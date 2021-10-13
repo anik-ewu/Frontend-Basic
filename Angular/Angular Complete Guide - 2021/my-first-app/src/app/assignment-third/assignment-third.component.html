@@ -1,0 +1,14 @@
+<button 
+class="btn btn-primary"
+(click)="displayDetails()"
+>Display Details</button>
+
+<p *ngIf="showPassword">Secret Password = tuna</p>
+
+<p 
+*ngFor = "let click of buttonClick" [innerText]="click"
+
+[ngClass]="{ backgroundCol: click >= 5}"
+></p>
+
+<!-- [ngStyle]="{backgroundColor: click >= 5" -->
