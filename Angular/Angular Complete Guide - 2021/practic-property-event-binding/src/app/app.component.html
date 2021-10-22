@@ -1,0 +1,10 @@
+<app-alice
+></app-alice>
+
+<app-bob></app-bob>
+<h1>Data Details</h1>
+<hr>
+<app-disp
+*ngFor="let dat of data"
+[element]="dat"
+></app-disp>
