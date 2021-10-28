@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'chef-house';
+
+  openRecipePage: boolean = true;
+  selectPage(flagStatus: boolean){
+    this.openRecipePage= flagStatus;
+  }
 }
