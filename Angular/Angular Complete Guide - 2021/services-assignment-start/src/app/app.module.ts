@@ -19,7 +19,7 @@ import { InactiveUsersComponent } from './inactive-users/inactive-users.componen
     BrowserModule,
     FormsModule,
   ],
-  providers: [ CounterService],
+  providers: [CounterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

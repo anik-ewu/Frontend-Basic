@@ -1,3 +1,4 @@
+import { CounterService } from './../counter.service';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { UserService } from '../user.service';
 
@@ -10,7 +11,7 @@ import { UserService } from '../user.service';
 export class InactiveUsersComponent {
   @Input() users: string[];
 
-  constructor(private userService: UserService){}
+  constructor(private userService: UserService, private counterService: CounterService){}
 
   onSetToActive(id: number) {
     this.userService.onSetToActive(id);
