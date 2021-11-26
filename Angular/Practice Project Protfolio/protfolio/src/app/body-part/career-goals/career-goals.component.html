@@ -1,0 +1,20 @@
+<div class="career-goals pd-5">
+  <h4>Career Objective</h4>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis assumenda nobis fugit, sint consectetur culpa necessitatibus. Perspiciatis aut, dignissimos atque tenetur tempora perferendis tempore?
+    <span>
+      <button  
+        [ngClass]="{btn: viewMore}"
+        (click)="viewMode()">view more
+      </button>
+    </span>
+  </p> 
+  <span *ngIf="viewMore">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia deleniti possimus iste incidunt aliquid quia distinctio beatae facere rem placeat nulla, inventore velit animi quaerat doloribus quae nam reiciendis iure harum aspernatur excepturi facilis veritatis, nihil aliquam. Nemo facilis consectetur recusandae! Non, maxime. Expedita accusantium accusamus laboriosam delectus, aspernatur commodi.
+    <span>
+      <button  
+        (click)="viewMode()">showLess
+      </button>
+    </span>
+  </span>
+</div>
+<hr>

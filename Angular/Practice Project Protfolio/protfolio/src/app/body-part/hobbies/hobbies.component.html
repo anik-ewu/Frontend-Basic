@@ -1,0 +1,22 @@
+<!-- Testing Data Binding and 
+     Angular Directives -->
+
+<div class="hobbies">
+  <h4>Hobbies</h4>
+  <li 
+    *ngFor= "let i of hobbies">{{i}}
+  </li>
+  <button 
+    [disabled]="addNewHobby"
+    (click)="addingStatus()">Add
+  </button>
+  <div class="add-hobbies" *ngIf="addNewHobby">
+    <label for="add-new-hobbies">Add New Hobby</label>
+    <input type="text"
+    [(ngModel)]="newHobby"
+    placeholder="type here">
+    <button (click)="hobbyAdded()">Click To Add</button>
+  </div>
+</div>
+<hr>
+
