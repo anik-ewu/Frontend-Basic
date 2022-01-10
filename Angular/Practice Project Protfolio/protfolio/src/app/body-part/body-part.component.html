@@ -1,2 +1,12 @@
 <career-goals></career-goals>
 <hobbies></hobbies>
+<h5>Describing words: </h5>
+<div *ngFor="let i of descriveWords">
+  <custom-property-binding 
+    [word]="i" 
+    (wordAdded)="addWord($event)"></custom-property-binding>
+</div>
+
+<div *ngIf="testword!='test'">
+  {{testword}}
+</div>

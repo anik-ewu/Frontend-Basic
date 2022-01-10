@@ -1,0 +1,15 @@
+
+
+  <div>
+    <strong>{{dercribeWord}}</strong>
+  </div>
+  <div  style="margin-top: 10px;">
+      <input 
+        type="text" 
+        placeholder="add wordx"
+        [(ngModel)]="textword">
+        {{textword}}
+      <button 
+        type="button" 
+        (click)="addDesWord()">Add</button>
+  </div>

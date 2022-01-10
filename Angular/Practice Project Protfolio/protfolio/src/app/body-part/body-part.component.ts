@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BodyPartComponent implements OnInit {
 
+  descriveWords = ['positive', 'hardworker', 'never give up', 'last', 'huh'];    
+  testword: string = 'test';
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addWord(word: string){
+    console.log("hi",word);
+    this.descriveWords.push(word);
+    this.testword = word;
   }
 
 }
