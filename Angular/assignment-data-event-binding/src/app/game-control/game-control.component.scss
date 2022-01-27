@@ -1,0 +1,25 @@
+
+.container {
+
+  .action {
+    display: flex;
+    justify-content: center;
+    column-gap: 40px;
+    padding-top: 100px;
+
+    button {
+      height: 35px;
+      width: 150px;
+      font-weight: bold;
+    }
+    .start-btn button{
+      border: 2px solid black;
+    }
+    .end-button button{
+      background-color: crimson;
+      color: white;
+      border: 2px solid white;
+    }
+  }
+
+}

@@ -1,0 +1,7 @@
+<app-game-control (intervalFired) ="intervalFired($event)"></app-game-control>
+
+<div class="content">
+  <app-even *ngFor="let even of evenNumbers"
+   [number]="even"></app-even>
+   <!-- <ng-container *ngFor="let even of evenNumbers">{{even}}</ng-container> -->
+</div>
