@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { Component, ContentChild, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-first-component',
@@ -9,7 +9,7 @@ import { Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from '@an
 export class FirstComponentComponent implements OnInit {
 
   @ViewChild('userInput', {static: false}) userInputData: any;
-
+  @ContentChild('firstText', {static: true}) firstTextValue: any;
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +17,9 @@ export class FirstComponentComponent implements OnInit {
 
   onSubmit(value: any) {
     console.log(this.userInputData.nativeElement.value);
+  }
+  ngAfterContentInit() {
+    console.log(this.firstTextValue.nativeElement.textContent);
   }
 
 }
