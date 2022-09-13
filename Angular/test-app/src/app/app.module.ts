@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponentComponent } from './first-component/first-component.component';
 import { SecondComponentComponent } from './second-component/second-component.component';
+import { HilightDirectiveDirective } from './custom-attirbute/basic-hilight-directive/hilight-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponentComponent,
-    SecondComponentComponent
+    SecondComponentComponent,
+    HilightDirectiveDirective
   ],
   imports: [
     BrowserModule,

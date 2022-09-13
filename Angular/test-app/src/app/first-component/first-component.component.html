@@ -1,5 +1,11 @@
 <h3>I am in first component</h3>
+
+<!-- using local referance -->
 <input type="text" #userInput>
 <button (click)="onSubmit(userInput)">Submit</button>
+
+<!-- using content child -->
 <ng-content></ng-content>
-<ng-content></ng-content>
+
+<!-- using custom attribute -->
+<p appHilightDirective>style me with custom directive</p>
