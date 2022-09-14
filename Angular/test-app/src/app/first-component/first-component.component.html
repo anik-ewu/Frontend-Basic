@@ -1,11 +1,15 @@
-<h5>I am in first component</h5>
+<div class="first-component">
+  <div class="header">
+    <span>I am in first component</span>
+  </div>
 
-<!-- using local referance -->
-<input type="text" #userInput>
-<button (click)="onSubmit(userInput)">Submit</button>
+  <!-- using local referance -->
+  <input type="text" #userInput>
+  <button (click)="onSubmit(userInput)">Submit</button>
 
-<!-- using content child -->
-<ng-content></ng-content>
+  <!-- using content child -->
+  <ng-content></ng-content>
 
-<!-- using custom attribute -->
-<p appHilightDirective>style me with custom directive</p>
+  <!-- using custom attribute -->
+  <p appHilightDirective>style me with custom directive</p>
+</div>
